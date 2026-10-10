@@ -1,0 +1,56 @@
+test           seed   result detail
+reset_test     1      PASS   
+reset_test     2      PASS   
+reset_test     3      PASS   
+reset_test     4      PASS   
+reset_test     5      PASS   
+reset_test     6      PASS   
+reset_test     7      PASS   
+reset_test     8      PASS   
+reset_test     9      PASS   
+reset_test     10     PASS   
+strb_test      1      PASS   
+strb_test      2      PASS   
+strb_test      3      PASS   
+strb_test      4      PASS   
+strb_test      5      PASS   
+strb_test      6      PASS   
+strb_test      7      PASS   
+strb_test      8      PASS   
+strb_test      9      PASS   
+strb_test      10     PASS   
+irq_w1c_test   1      PASS   
+irq_w1c_test   2      PASS   
+irq_w1c_test   3      PASS   
+irq_w1c_test   4      PASS   
+irq_w1c_test   5      PASS   
+irq_w1c_test   6      PASS   
+irq_w1c_test   7      PASS   
+irq_w1c_test   8      PASS   
+irq_w1c_test   9      PASS   
+irq_w1c_test   10     PASS   
+err_test       1      PASS   
+err_test       2      PASS   
+err_test       3      PASS   
+err_test       4      PASS   
+err_test       5      PASS   
+err_test       6      PASS   
+err_test       7      PASS   
+err_test       8      PASS   
+err_test       9      PASS   
+err_test       10     PASS   
+rand_test      1      PASS   
+rand_test      2      PASS   
+rand_test      3      PASS   
+rand_test      4      PASS   
+rand_test      5      PASS   
+rand_test      6      PASS   
+rand_test      7      PASS   
+rand_test      8      PASS   
+rand_test      9      PASS   
+rand_test      10     PASS   
+
+runs passed: 50   runs failed: 0
+
+merged functional coverage (bins hit by at least one run):
+  31 / 31 bins  (100.0%)

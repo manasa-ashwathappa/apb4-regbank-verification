@@ -1,0 +1,43 @@
+[TB] running rand_test
+[COV] ------------------------------------------------
+[COV] rd_CTRL                  105              
+[COV] wr_CTRL                  123              
+[COV] rd_STATUS                104              
+[COV] wr_STATUS                101              
+[COV] rd_INT_STAT              89               
+[COV] wr_INT_STAT              113              
+[COV] rd_SCRATCH               97               
+[COV] wr_SCRATCH               101              
+[COV] rd_DATA0                 77               
+[COV] wr_DATA0                 106              
+[COV] rd_DATA1                 98               
+[COV] wr_DATA1                 121              
+[COV] rd_DATA2                 117              
+[COV] wr_DATA2                 113              
+[COV] rd_DATA3                 81               
+[COV] wr_DATA3                 111              
+[COV] rd_ID                    97               
+[COV] wr_ID                    127              
+[COV] err_rd                   53               
+[COV] err_wr                   68               
+[COV] err_misaligned           68               
+[COV] strb_full                605              
+[COV] strb_single_byte         251              
+[COV] strb_partial             136              
+[COV] strb_none                24               
+[COV] rd_with_wait_state       373              
+[COV] back_to_back             952              
+[COV] evt_during_w1c_clear     8                
+[COV] evt_during_ctrl_write    40               
+[COV] irq_asserted             2998             
+[COV] evt_while_disabled       960              
+[COV] functional coverage (bin table): 100.0%
+[COV] ------------------------------------------------
+[SB] transfers checked : 2002
+[SB] individual checks : 9859
+[SB] mismatches        : 0
+[TB] *** TEST PASSED : rand_test ***
+- ../tb/../tb/tb_top.sv:95: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.036 2025-04-27
+- Verilator: $finish at 69us; walltime 5.983 s; speed 237.681 us/s
+- Verilator: cpu 0.292 s on 1 threads; alloced 9 MB

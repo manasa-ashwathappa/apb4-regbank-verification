@@ -1,0 +1,55 @@
+[TB] running strb_test
+[605000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 61: RD addr=0x010 data=0xa5a5a5a5 err=0 ws=1 (DATA0) expected 0x000000a5
+-Info: ../tb/scoreboard.sv:44: Verilog $stop, ignored due to +verilator+error+limit
+[705000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 71: RD addr=0x010 data=0xa5a5a5a5 err=0 ws=1 (DATA0) expected 0x0000a500
+[805000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 81: RD addr=0x010 data=0xa5a5a5a5 err=0 ws=1 (DATA0) expected 0x00a50000
+[905000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 91: RD addr=0x010 data=0xa5a5a5a5 err=0 ws=1 (DATA0) expected 0xa5000000
+[1095000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 110: RD addr=0x014 data=0xa5a5a5a5 err=0 ws=1 (DATA1) expected 0x000000a5
+[1195000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 120: RD addr=0x014 data=0xa5a5a5a5 err=0 ws=1 (DATA1) expected 0x0000a500
+[1295000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 130: RD addr=0x014 data=0xa5a5a5a5 err=0 ws=1 (DATA1) expected 0x00a50000
+[1395000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 140: RD addr=0x014 data=0xa5a5a5a5 err=0 ws=1 (DATA1) expected 0xa5000000
+[1585000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 159: RD addr=0x018 data=0xa5a5a5a5 err=0 ws=1 (DATA2) expected 0x000000a5
+[1685000] %Error: scoreboard.sv:44: Assertion failed in regbank_tb_pkg.scoreboard.report_mismatch: [SB] cycle 169: RD addr=0x018 data=0xa5a5a5a5 err=0 ws=1 (DATA2) expected 0x0000a500
+[SB] further mismatches suppressed
+[COV] ------------------------------------------------
+[COV] rd_CTRL                  5                
+[COV] wr_CTRL                  10               
+[COV] rd_STATUS                0        <-- HOLE
+[COV] wr_STATUS                0        <-- HOLE
+[COV] rd_INT_STAT              0        <-- HOLE
+[COV] wr_INT_STAT              0        <-- HOLE
+[COV] rd_SCRATCH               4                
+[COV] wr_SCRATCH               8                
+[COV] rd_DATA0                 18               
+[COV] wr_DATA0                 38               
+[COV] rd_DATA1                 22               
+[COV] wr_DATA1                 42               
+[COV] rd_DATA2                 26               
+[COV] wr_DATA2                 46               
+[COV] rd_DATA3                 19               
+[COV] wr_DATA3                 37               
+[COV] rd_ID                    0        <-- HOLE
+[COV] wr_ID                    0        <-- HOLE
+[COV] err_rd                   0        <-- HOLE
+[COV] err_wr                   0        <-- HOLE
+[COV] err_misaligned           0        <-- HOLE
+[COV] strb_full                107              
+[COV] strb_single_byte         54               
+[COV] strb_partial             18               
+[COV] strb_none                2                
+[COV] rd_with_wait_state       85               
+[COV] back_to_back             87               
+[COV] evt_during_w1c_clear     0        <-- HOLE
+[COV] evt_during_ctrl_write    0        <-- HOLE
+[COV] irq_asserted             0        <-- HOLE
+[COV] evt_while_disabled       0        <-- HOLE
+[COV] functional coverage (bin table): 58.1%
+[COV] ------------------------------------------------
+[SB] transfers checked : 275
+[SB] individual checks : 1317
+[SB] mismatches        : 44
+[TB] *** TEST FAILED : strb_test (44 mismatches) ***
+- ../tb/../tb/tb_top.sv:95: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.036 2025-04-27
+- Verilator: $finish at 10us; walltime 0.493 s; speed 285.088 us/s
+- Verilator: cpu 0.033 s on 1 threads; alloced 9 MB

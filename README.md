@@ -123,6 +123,18 @@ Synopsys VCS, `+TEST=rand_test` (single seed):
 [TB] *** TEST PASSED : rand_test ***
 ```
 
+### Waveforms (Synopsys VCS, EPWave)
+
+![APB traffic](docs/waveform_apb.png)
+*Back-to-back APB transfers on VCS: a byte-strobed write to CTRL's reserved bytes
+leaves it unchanged (0x52 read back), a single-byte write, and a one-cycle wait
+state on a DATA register read (PREADY low).*
+
+![Interrupt and W1C](docs/waveform_irq.png)
+*hw_evt pulses increment the event counter while CTRL.enable = 1. After CTRL is
+written to 0x52 (enable off), events are ignored while the sticky INT_STAT flag
+holds irq_o high. A write of 1 to INT_STAT (0x008) clears the flag and drops irq_o.*
+
 Testbench validation — the TB is only useful if it fails on broken RTL:
 
 | Seeded bug | Caught by | Log excerpt |
